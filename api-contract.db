@@ -1,0 +1,22 @@
+# Chronikon Knowledge Graph API Contract
+
+## GET /health
+- Returns API status.
+
+## GET /repo/:id/graph
+- Returns the complete graph (nodes + edges).
+
+Response example:
+{
+  "nodes": [],
+  "edges": []
+}
+
+## GET /repo/:id/files
+- Returns list of File nodes.
+
+## GET /repo/:id/commits
+- Returns list of Commit nodes.
+
+## GET /repo/:id/contributors
+- Returns list of Contributor nodes.
